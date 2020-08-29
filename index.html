@@ -3,6 +3,7 @@
         <title>Arshu's Portfolio</title>
         <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -33,7 +34,25 @@
                 <h2>About</h2>
             </div>
             <div class="orange_small"></div>
-            <div class="skills" id="skills1"></div>
+            <div class="skills" id="skills1">
+                <h2>Skills</h2>
+                <div class="col1">
+                    <ul>
+                        <li>HTML</li>
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                        <li>C</li>
+                        <li>SQL</li>
+                    </ul>
+                    <ul>
+                        <li>CSS</li>
+                        <li>Flutter</li>
+                        <li>Python Flask</li>
+                        <li>C++</li>
+                        <li>PyTorch</li>
+                    </ul>
+                </div>
+            </div>
         </section>
     </body>
     <style>
@@ -170,10 +189,31 @@
             height: 600px;
             left: 100px;
             top: 900px;
-
-            background: #17222C;
+            transition: background-image 0.5s ease-in-out;
+            /*background-color: #17222C;*/
+            background-image:url("about_blue.png");
+            background-size: cover;
+            background-repeat: no-repeat;
             border-radius: 132px;
             transform: rotate(43.15deg);
+        }
+        .about:hover{
+            
+            background-image: url(https://github.com/arshupt.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            
+        }
+        .about h2{
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 72px;
+            line-height: 84px;
+            margin-top: -50px;
+            margin-left: -20px;
+            transform: rotate(-45deg);
+            color: #FA5B01;
         }
         .orange_small{
             position: absolute;
@@ -194,17 +234,39 @@
             top: 1200px;
             border-radius: 50%;
             background: linear-gradient(180deg, rgba(255, 108, 19, 0.8) 0%, rgba(255, 18, 41, 0.8) 100%);
+            transition: width 0.5s, height 0.5s, left 0.5s, top 0.5s;
         }
-        .about h2{
+        .skills:hover{
+            width: 650px;
+            height: 650px;
+            left: 53%;
+            top: 1150px;  
+        }
+        .skills h2{
             font-family: 'Roboto', sans-serif;
             font-style: normal;
             font-weight: 900;
             font-size: 72px;
             line-height: 84px;
-            margin-top: -50px;
-            margin-left: -20px;
-            transform: rotate(-45deg);
-            color: #FA5B01;
+            text-align: center;
+            margin-top: 30px;
+            color: #17222C;
+        }
+        .skills div{
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 50px;
+            margin-top: 50px;
+        }
+        .skills div ul{
+            list-style-image: url("bullet_2.png")
+        }
+        .col1{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
         }
     </style>
 </html>
