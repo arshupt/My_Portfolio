@@ -2,11 +2,20 @@
     <head>
         <title>Arshu's Portfolio</title>
         <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
     </head>
     <body>
         <section class="section1">
-                <img class="bg_white" src="bg white.svg" alt="">
-                <img class="bg_orange" src="bg_orange.png" alt="">
+                <div class="navbar">
+                    <ul class="nav_links">
+                        <li><a href="">About</a></li>
+                        <li><a href="">Skills</a></li>
+                        <li><a href="">Projects</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="bg_white"></div>
+                <div class="bgorange"></div>
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
@@ -24,6 +33,7 @@
         *{
             margin: 0;
             padding: 0;
+            
         }
         body{
             background: #e9f4ff;
@@ -40,24 +50,46 @@
             transform: rotate(46.93deg);
             z-index: 1;
         }
-        .bg_orange{
+        .bgorange{
             position: absolute;
-            right: 0;
-            top:0;
-            height:600px;
             z-index: 2;
+            width: 600px;
+            height: 600px;
+            right: -100px;
+            top: -167px;
+            border-radius: 50%;
+            background: linear-gradient(180deg, rgba(255, 108, 19, 0.62) 0%, rgba(255, 18, 41, 0.62) 100%);
+        }
+        .navbar{
+            margin-left: 57%;
+            padding: 30px 0;
+            position: absolute;
+            z-index: 3;
+        }
+        .nav_links{
+            list-style: none;  
+        }
+        .nav_links li{
+            display: inline-block;
+            padding: 0px 45px;
+        }
+        .navbar li,a{
+            text-decoration: none;
+            color: #605F59;
+            font-size: 20px;
+            font-family: 'Roboto', sans-serif;
         }
         .div_dp{
             position: absolute;
-            width: 25%;
-            height: 50%;
+            width: 350px;
+            height: 350px;
             transform: rotate(45deg);
             border-radius: 70px;
             top: 20%;
             display: inline-flex;
             justify-content: center;
             align-items: center;
-            right: 17%;
+            left: 55%;
             z-index: 2;
             overflow: hidden;
         }
@@ -113,7 +145,7 @@
             font-size: 60px;
             line-height: 120px;
             left: 15%;
-            top: 30%;
+            top: 27%;
         }
         .cv_btn{
             position: absolute;
