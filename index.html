@@ -5,15 +5,15 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
     </head>
     <body>
+        <header>
+            <ul class="nav_links">
+                <li><a href="#about1">About</a></li>
+                <li><a href="#skills1">Skills</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </header>
         <section class="section1">
-                <div class="navbar">
-                    <ul class="nav_links">
-                        <li><a href="">About</a></li>
-                        <li><a href="">Skills</a></li>
-                        <li><a href="">Projects</a></li>
-                        <li><a href="">Contact</a></li>
-                    </ul>
-                </div>
                 <div class="bg_white"></div>
                 <div class="bgorange"></div>
                 <div class="line1"></div>
@@ -27,6 +27,13 @@
                     Mohammed Arshu
                 </div>
                 <a href="https://drive.google.com/file/d/1ojWtTPtFo8NxU2hfhdxh4X7mxKZZdKzb/view?usp=sharing"><img class="cv_btn" src="cv_btn.png" alt=""></a>
+        </section>
+        <section class="section2">
+            <div class="about" id="about1">
+                <h2>About</h2>
+            </div>
+            <div class="orange_small"></div>
+            <div class="skills" id="skills1"></div>
         </section>
     </body>
     <style>
@@ -60,16 +67,18 @@
             border-radius: 50%;
             background: linear-gradient(180deg, rgba(255, 108, 19, 0.62) 0%, rgba(255, 18, 41, 0.62) 100%);
         }
-        .navbar{
+        header{
             padding: 30px 0;
             position: absolute;
             z-index: 3;
+            justify-content: end;
             background:none;
         }
         .nav_links{
             display: flex;
             flex-direction: row;
             list-style: none;
+            
         }
         .nav_links li{
             padding: 0px 45px;
@@ -153,6 +162,49 @@
             z-index: 3;
             left: 15%;
             top: 50%;
+        }
+        .about{
+            position: absolute;
+            z-index: 2;
+            width: 600px;
+            height: 600px;
+            left: 100px;
+            top: 900px;
+
+            background: #17222C;
+            border-radius: 132px;
+            transform: rotate(43.15deg);
+        }
+        .orange_small{
+            position: absolute;
+            z-index: 1;
+            width: 390px;
+            height: 390px;
+            left: -175px;
+            top: 1200px;
+            border-radius: 50%;
+            background: linear-gradient(180deg, rgba(255, 108, 19, 0.8) 0%, rgba(255, 18, 41, 0.8) 100%);
+        }
+        .skills{
+            position: absolute;
+            z-index: 1;
+            width: 600px;
+            height: 600px;
+            left: 850px;
+            top: 1200px;
+            border-radius: 50%;
+            background: linear-gradient(180deg, rgba(255, 108, 19, 0.8) 0%, rgba(255, 18, 41, 0.8) 100%);
+        }
+        .about h2{
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 72px;
+            line-height: 84px;
+            margin-top: -50px;
+            margin-left: -20px;
+            transform: rotate(-45deg);
+            color: #FA5B01;
         }
     </style>
 </html>
