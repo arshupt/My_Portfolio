@@ -33,10 +33,10 @@
         *{
             margin: 0;
             padding: 0;
-            
         }
         body{
             background: #e9f4ff;
+            overflow-x: hidden;
         }
         .bg_white{
             position: absolute;
@@ -61,19 +61,21 @@
             background: linear-gradient(180deg, rgba(255, 108, 19, 0.62) 0%, rgba(255, 18, 41, 0.62) 100%);
         }
         .navbar{
-            margin-left: 57%;
             padding: 30px 0;
             position: absolute;
             z-index: 3;
+            background:none;
         }
         .nav_links{
-            list-style: none;  
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            margin-left: 135%;
         }
         .nav_links li{
-            display: inline-block;
             padding: 0px 45px;
         }
-        .navbar li,a{
+        .nav_links li,a{
             text-decoration: none;
             color: #605F59;
             font-size: 20px;
@@ -145,7 +147,7 @@
             font-size: 60px;
             line-height: 120px;
             left: 15%;
-            top: 27%;
+            top: 28%;
         }
         .cv_btn{
             position: absolute;
