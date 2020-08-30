@@ -29,7 +29,12 @@
                     Mohammed Arshu
                 </div>
                 <a href="https://drive.google.com/file/d/1ojWtTPtFo8NxU2hfhdxh4X7mxKZZdKzb/view?usp=sharing"><img class="cv_btn" src="cv_btn.png" alt=""></a>
-        </section>
+                <div class="logos">
+                    <a href="https://www.linkedin.com/in/mohammed-arshu/"><img src="linkedin_logo.png" alt=""></a>
+                    <a href="https://github.com/arshupt"><img src="git_logo.png" alt=""></a>
+                    <a href="https://www.instagram.com/a_rshu_u/"><img src="insta_logo.png" alt=""></a>
+                </div>
+            </section>
         <section class="section2">
             <div class="about" id="about1">
                 <h2>About</h2>
@@ -85,6 +90,10 @@
             <p class="contacts">Contact</p>
             <div class="contaner">
                 <img class="contact_bg" src="group_3.png" alt="">
+                <div class="container2">
+                    <h3>Get in Touch</h3>
+                    <p>arshupt123@gmail.com</p>
+                </div>
                 <div class="container1">
                         <div><a href="https://www.linkedin.com/in/mohammed-arshu/"><img src="linkedin.png" alt=""></a></div>
                         <div><a href="https://github.com/arshupt"><img src="github.png" alt=""></a></div>
@@ -92,6 +101,9 @@
                 </div>
             </div>
         </section>
+        <footer>
+            <div class="footer">Developed by Arshu | <a href="">Source</a></div>
+        </footer>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
@@ -133,6 +145,7 @@
             z-index: 3;
             justify-content: end;
             background:none;
+            visibility: hidden;
         }
         .nav_links{
             display: flex;
@@ -222,6 +235,19 @@
             z-index: 3;
             left: 15%;
             top: 50%;
+        }
+        .logos{
+            margin-top: 12%;
+            position: absolute;
+            z-index: 3;
+            display: flex;
+            flex-direction: column;
+        }
+        .logos a{
+            padding:30px;
+        }
+        .logos a img{
+            width: 20px;
         }
         .about{
             position: absolute;
@@ -350,7 +376,7 @@
             position: relative;
             z-index: 2;
             top: 2300px;
-            font-family: Roboto;
+            font-family: 'Roboto', sans-serif;
             font-style: normal;
             font-weight: 900;
             font-size: 72px;
@@ -369,12 +395,53 @@
             z-index: 2;
             display: flex;
             justify-content: center;
-            top: 1800px;
+            top: 1600px;
             
         }
         .container1 img{
             width: 100px;
             margin: 30px;
+        }
+        .container2{
+            position: relative;
+            z-index: 2;
+            top:1600px;
+            text-align: center;
+        }
+        .container2 h3{
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 50px;
+            line-height: 42px;
+        }
+        .container2 p{
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 25px;
+            line-height: 60px;
+        }
+        footer{
+            position: relative;
+            z-index: 1;
+            top: 1700px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        footer .footer{
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 23px;
+            color: #605F59;
+        }
+        footer .footer a{
+            text-decoration: none;
+        }
+        footer .footer a:hover{
+            color: #605F59;
         }
     </style>
 </html>
