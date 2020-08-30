@@ -3,7 +3,7 @@
         <title>Arshu's Portfolio</title>
         <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     </head>
     <body>
@@ -66,22 +66,20 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <div class="title"></div>
-                        <div class="desc"></div>
+                        <div class="title">
+                            <p>VegMart</p>
+                        </div>
+                        <div class="desc">
+                            <p>A website developed using HTML & CSS in Front end and Flask in Back end. It is an online vegetable shopping platform for a shop. The customer order the required vegetables through this website and the shop delivers the vegetables to their houses.</p>
+                        </div>
                     </div>
                     <div class="col">
-                        <div class="title"></div>
-                        <div class="desc"></div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="title"></div>
-                        <div class="desc"></div>
-                    </div>
-                    <div class="col">
-                        <div class="title"></div>
-                        <div class="desc"></div>
+                        <div class="title">
+                            <p>PrimeAide</p>
+                        </div>
+                        <div class="desc">
+                            <p>An application, developed using Flutter, that returns diagnosis if symptoms are given by the user to it. The user can give the input as either text or voice. The user could do as told to recover from the illness.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -363,6 +361,20 @@
             background: linear-gradient(180deg, rgba(255, 96, 0, 0.8) 0%, rgba(255, 0, 25, 0.8) 100%);
             border-radius: 34px;
             transform: rotate(-45deg);
+            padding-top: 90px;
+            padding-right: 40px;
+        }
+        .title p{
+            margin: auto;
+            z-index: 2;
+            transform:rotate(45deg);
+            font-family:'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 25px;
+            line-height: 29px;
+            text-align: center;
+            color: #FFFFFF;
         }
         .desc{
             position: relative;
@@ -371,6 +383,17 @@
             top: 2015px;
             background: #17222C;
             border-radius: 54px;
+            padding-top: 110px;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        .desc p{
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-size: 20px;
+            line-height: 29px;
+            text-align: justify;
+            color: #FFFFFF;
         }
         .contacts{
             position: relative;
@@ -405,7 +428,7 @@
         .container2{
             position: relative;
             z-index: 2;
-            top:1600px;
+            top:1630px;
             text-align: center;
         }
         .container2 h3{
