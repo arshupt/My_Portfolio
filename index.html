@@ -40,9 +40,12 @@
         <section class="section2">
             <div class="about" id="about1">
                 <h2>About</h2>
-                <p>I am a web developer with keen interest in full stack development. Coding is something what i love to do as my daily routine. Rather than defining myself by the works i have done,  i define myself by the work i want to do. I prefer to keep learning, continue challenging myself and explore new technologies.
+                <div><p>I am a web developer with keen interest in Full Stack Development. Coding is something what i love to do as my daily routine. Rather than defining myself by the works i have done,  i define myself by the work i want to do. I prefer to keep learning, continue challenging myself and explore new technologies.
+                    Recently i fueled up my enthusiasm towards Deep Leaning. At times, i involve in Android Application Development as well. I like to develop expertise in a number of areas over the course of my life.
+                    I am never satisfied to just come up with ideas. Instead i have an almost impulsive need to act on them.</p></div>
+                <!--<p class="center">I am a web developer with keen interest in full stack development. Coding is something what i love to do as my daily routine. Rather than defining myself by the works i have done,  i define myself by the work i want to do. I prefer to keep learning, continue challenging myself and explore new technologies.
                     Recently i fueled up my enthusiasm towards deep leaning. At times, i involve in android application development as well. I like to develop expertise in a number of areas over the course of my life.
-                    I am never satisfied to just come up with ideas. Instead i have an almost impulsive need to act on them.</p>
+                    I am never satisfied to just come up with ideas. Instead i have an almost impulsive need to act on them.</p>-->
             </div>
             <div class="orange_small"></div>
             <div class="skills" id="skills1">
@@ -58,7 +61,7 @@
                     <ul>
                         <li>CSS</li>
                         <li>Flutter</li>
-                        <li>Python Flask</li>
+                        <li>Flask</li>
                         <li>C++</li>
                         <li>PyTorch</li>
                     </ul>
@@ -271,7 +274,7 @@
         }
         .about:hover{
             
-            background-image: url("dp1.png");
+            background-image: url(https://github.com/arshupt/arshupt.github.io/blob/master/dp1.png?raw=true);
             background-repeat: no-repeat;
             background-size: contain;
             
@@ -287,18 +290,23 @@
             transform: rotate(-45deg);
             color: #FA5B01;
         }
+        .about div{
+            transform: rotate(-45deg);
+            height: 600px;
+            width: 600px;
+            margin-left: 120px;
+            margin-top: 100px;
+            margin-bottom: 150px;
+            text-align: center;
+        }
         .about p{
             color: white;
-            transform: rotate(-45deg);
-            margin-left: 0px;
-            margin-top: 150px;
-            margin-bottom: 150px;
             font-family: 'Montserrat', sans-serif;
             font-style: normal;
             font-weight: 500;
             font-size: 20px;
             line-height: 25px;
-            text-align: center;
+            
         }
         .orange_small{
             position: absolute;
@@ -375,7 +383,7 @@
             z-index: 1;
             width: 173.95px;
             height: 174.43px;
-            left: 190px;
+            left: 180px;
             top: 2000px;
 
             background: linear-gradient(180deg, rgba(255, 96, 0, 0.8) 0%, rgba(255, 0, 25, 0.8) 100%);
@@ -411,6 +419,7 @@
         .desc p{
             font-family: 'Montserrat', sans-serif;
             font-style: normal;
+            font-weight: 400;
             font-size: 20px;
             line-height: 29px;
             text-align: justify;
@@ -487,7 +496,7 @@
         footer .footer a:hover{
             color: #605F59;
         }
-        @media only screen and (max-width: 800px) {
+        @media only screen and (max-width: 600px) {
             .bg_white{
                 top:-300px;
             }
@@ -498,7 +507,7 @@
                 right: -300px;
             }
             .name{
-                font-size: 40px;
+                font-size: 35px;
             }
             .cv_btn{
                 width: 150px;
@@ -528,40 +537,52 @@
             .line3{
                 visibility: hidden;
             }
+            .logos{
+                visibility: hidden;
+            }
             .about{
-                width: 500px;
-                height: 500px;
-                left: 0;
-                border-radius: 100px;
+                width: 520px;
+                height: 520px;
+                left:0;
+                border-radius: 70px;
             }
             .about h2{
                 font-size:50px;
             }
             .about p{
                 font-size: 13px;
-                margin-top: 100px;
-                width: 95%;
-                margin-bottom: 0;
+                font-weight: 300px;
+                line-height: 20px;
+            }
+            .about div{
+                text-align: justify;
+                margin-left: 270px;
+                width: 60%;
+                height: 900px;
+                margin-top: 50px;
+                margin-bottom: 250px;
             }
             .skills{
                 top: 1700px;
-                left: 50px;
-                width: 550px;
-                height: 550px;
+                left: 20px;
+                width: 450px;
+                height: 450px;
             }
             .skills:hover{
-                height: 575px;
-                width: 575px;
+                height: 475px;
+                width: 475px;
                 top: 1650px;
-                left: 25px;
+                left: 15px;
             }
             .skills h2{
+                margin-left: -40px;
                 font-size:50px ;
             }
             .skills div{
-                font-size:15px;
+                font-size:13px;
                 margin-top: 20px;
-                margin-left: 0;
+                margin-left: -30px;
+                line-height: 15px;
             }
             .projects{
                 top: 2250px;
@@ -569,16 +590,19 @@
             }
             .title{
                 top: 2300px;
-                left: 150px;
+                left: 28%;
             }
             .desc{
                 top: 2215px;
             }
             .desc p{
-                font-size:18px;
+                font-size:15px;
+                font-weight: 200px;
+                line-height: 20px;
+                text-align: left;
             }
             .contacts{
-                top: 2300px;
+                top: 2250px;
                 font-size: 50px;
             }
             .contact_bg{
@@ -593,13 +617,14 @@
                 width: 60px;
             }
             .container2{
-                top: 1880px;
+                top: 1910px;
             }
             .container2 h3{
-                font-size: 40px;
+                font-size: 30px;
             }
             .container2 p{
-                font-size: 15px;
+                font-size: 14px;
+                line-height: 50px;
             }
             footer{
                 top: 1880px;
