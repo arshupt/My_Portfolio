@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     </head>
     <body>
+        <p class="warning container">Please use a Desktop/Laptop to see the Desktop view of this site</p>
         <header>
             <ul class="nav_links">
                 <li><a href="#about1">About</a></li>
@@ -122,6 +123,9 @@
         body{
             background: #e9f4ff;
             overflow-x: hidden;
+        }
+        .warning{
+            visibility: hidden;
         }
         .bg_white{
             position: absolute;
@@ -262,9 +266,10 @@
             height: 600px;
             left: 100px;
             top: 900px;
+            -o-transition: all 0.5 ease-in-out;
+            -webkit-transition: all 0.5s ease-in-out;
+            -moz-transition: all 0.5s ease-in-out;
             transition: background-image 0.5s ease-in-out;
-            -webkit-transition: background-image 0.5s ease-in-out;
-            -moz-transition: background-image 0.5s ease-in-out;
             /*background-color: #17222C;*/
             background-image:url("about_blue.png");
             background-size: cover;
@@ -631,7 +636,12 @@
             }
         }
         @media only screen and (min-height: 1000px){
-            html,body{
+            .warning{
+                visibility: visible;
+                font-size: 16px;
+                text-align: center;
+            }
+            section,footer{
                 display: none;
             }
         }
