@@ -118,15 +118,17 @@ header{
     z-index: 3;
     font-family: 'Mukta', sans-serif;
     font-size: 60px;
-    line-height: 120px;
+    line-height: 40px;
+    margin-top: 40px;
     left: 15%;
     top: 28%;
 }
 .role{
-    position: absolute;
+    position: relative;
+    margin-top: 15px;
     z-index: 3;
-    top: 42%;
-    left: 15%;
+    top: 0;
+    left: 0;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -410,7 +412,7 @@ footer .footer a:hover{
         font-size: 35px;
     }
     .role{
-        top: 190px;
+        top: 0;
         font-size: 18px;
     }
     .cv_btn{
